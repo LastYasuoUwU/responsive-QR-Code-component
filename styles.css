@@ -15,7 +15,7 @@ body {
 }
 
 .card {
-    width: 35vw;
+    width: 13vw;
     border: black 1px solid;
     border-radius: 20px;
     background-color: hsl(0, 0%, 100%);
@@ -26,6 +26,8 @@ body {
 
 
 img {
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     align-self: center;
 }
@@ -39,4 +41,16 @@ img {
     font-weight: 400;
     color: hsl(220, 15%, 55%);
     text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+    .card {
+        width: 13vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 80vw;
+    }
 }
